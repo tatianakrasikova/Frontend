@@ -1,1 +1,31 @@
 /* ваше решение здесь */
+.button {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#login {
+  background-color: #778d45;
+}
+#login:hover {
+  color: black;
+}
+#login:active {
+  background-color: #006400;
+}
+
+#registration {
+  background-color: #aec09a;
+  color: black;
+}
+#registration:hover {
+  color: white;
+}
+#registration:active {
+  background-color: #32cd32;
+}

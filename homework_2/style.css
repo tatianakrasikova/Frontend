@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+
+  width: 300px;
+}
+p {
+  background-color: rgb(234, 246, 216);
+  border: solid red;
+}
+
+body {
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 530px;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: rgb(255, 219, 153);
+}
+
+span {
+  margin: 1px;
+  padding: 1px;
+  border: 1px solid blue;
+}
