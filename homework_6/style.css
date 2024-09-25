@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.css-heading {
+  color: blue;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.css-menu {
+  color: blueviolet;
+  font-size: 28px;
+}
+header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: sticky;
+  z-index: 5;
+  top: 0px;
+  background-color: rgb(179, 206, 255);
+}
+
+main {
+  padding: 0px 50px;
+}
+
+.sticky {
+  background-color: blue;
+  color: red;
+  position: sticky;
+  top: 200px;
+}
+
+.container-grid-min-max {
+  display: grid;
+  gap: 30px;
+  /* ячейки будут растягиваться пока не получится добавить новую с минимальным размером 300px */
+  /* при малом кол-ве ячеек в одной строке auto-fill - достраивает недостающие сохраняя размер для видимых элементов */
+  /* auto-fit - растягивает ячейки  */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* высота ячейки */
+  grid-auto-rows: 300px;
+  
+}
+.grid-item-six {
+  background-image: url("https://avatars.mds.yandex.net/i?id=bf76c8168b57de78ed2da5c2f25e2d75_l-9555577-images-thumbs&n=13");
+  background-size: cover;
+  background-position: top;
+}
+.grid-item-six1 {
+    background-image: url("https://i.etsystatic.com/21287835/r/il/779337/2163547727/il_794xN.2163547727_2fdz.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.grid-item-six4 {
+    background-image: url("https://i.pinimg.com/736x/75/67/bf/7567bf7b961bc2795cf210e9392376b1.jpg");
+    background-size: cover;
+    background-position: top;
+}
+.grid-item-six5{
+    background-image: url("https://i01.fotocdn.net/s207/abbf35f634c5f9ef/public_pin_m/2448591648.jpg");
+    background-size
+
+  }
+
+
+.grid-item-adaptive{
+    padding: 10px;
+    background-color: rgb(255, 219, 133);
+}
+
+footer {
+  padding: 10px 30px;
+  height: 200px;
+  background-color: rgb(203, 203, 203);
+  width: 100%;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+#login {
+  background-color: aqua;
+}
+#login:hover {
+  color: black;
+}
+#login:active {
+  background-color: red;
+}
+#registration {
+  background-color: violet;
+  color: black;
+}
+#registration:hover {
+  color: white;
+}
+#registration:active {
+  color: red;
+}
