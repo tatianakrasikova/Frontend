@@ -1,0 +1,11 @@
+Homework
+Задание:
+Сверстайте страницу максимально приближенно к макету:
+ https://www.figma.com/design/eKULbGIF2VagQrd4XUikhp/Berlin.de?node-id=4-2&t=BNd9imJ7PyF4NXGJ-1
+
+Используйте в работе: grid, flexbox, position.
+
+Иконки подключаются с помощью https://fontawesome.com/
+
+https://www.berlin.de/tourismus/
+ - вы можете посмотреть оригинал проекта по этой ссылке
