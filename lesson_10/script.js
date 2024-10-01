@@ -1,4 +1,5 @@
 // *! объявление переменных
+// *!
 
 // * через ключевое слово let
 // такой переменной можно переприсвоить значение (и даже другого типа данных)
@@ -9,12 +10,14 @@ let student;
 // если переменной не присвоено значение она равна undefined
 student = "Vladimir";
 student = "Mykola";
+console.log(student)
 
 // * через ключевое слово const
 // c const нужно определить значение в момент создания переменной
 // нельзя переприсвоить значение
 
 const language = "JavaScript";
+console.log(language)
 
 // мы не будем использовать var - для работы с переменными
 
@@ -35,8 +38,7 @@ let planetNumber = 3;
 // это синтаксис шаблонных строк для работы с логикой и выражениями внутри строк
 // пишется с косыми кавычками по бокам и знаком доллара с фигурными скобками - ${  }
 let greeting1 = `Мы с планеты ${planet}. Она находится в солнечной системе! Это ${planetNumber} планета от солнца`;
-
-// console.log(greeting1);
+console.log(greeting1);
 
 // *  2. number - число
 
@@ -74,7 +76,7 @@ let bigResult = 1000n + 100n;
 // уникальное символьное значение (чаще всего используется в объектах)
 
 let symbolId = Symbol(10);
-// console.log(symbolId);
+ console.log(symbolId);
 
 // ! операции над данными в JS
 
@@ -86,10 +88,10 @@ let symbolId = Symbol(10);
 
 // число которое сложим со строкой станет строкой
 let sum = 14 + 2 + "2";
+console.log(sum)
 
 // явное через String()
-let sum1 = String(42) + " - ответ на главный вопрос";
-
+let sum1 = String(42) + " - ответ на главный вопрос"
 console.log(sum1);
 
 // * преобразование в число
@@ -99,8 +101,10 @@ console.log(sum1);
 // в противном случае мы получим NaN - 'not a number' - специальное зарезервированное значение для результата недопустимых математических операций
 
 let sum2 = 2 + Number("2");
+console.log(sum2)
 
 let sum3 = 1000 + Number("100€");
+console.log(sum3)
 
 // явное через parseInt()
 // этот метод преобразовывает строку в число
@@ -125,7 +129,9 @@ console.log(sum4);
 // остальные значения считаются истинными
 
 let b1 = Boolean(""); // будет false
-let b2 = Boolean(100); // будет true
+console.log(b1)
+let b2 = Boolean(100);
+console.log(b2) // будет true
 
 // ! математические операторы в JS
 
@@ -135,18 +141,22 @@ let v1 = 12 + 45; // сложение
 let v2 = 10 - 5; // вычитание
 let v3 = 2 * 2; // умножение
 let v4 = 10 ** 10; // степень
-let v5 = 8 / 4; // деление
+let v5 = 8 / 4;// деление
+console.log(v5)
 let v6 = 13 % 2; // остаток от деления
 let v7 = Math.sqrt(16); // квадратный корень
 
+
+
 // случайное число от 1 до 0
 let random = Math.random();
+console.log(random)
 
 // мы можем преобразовать предыдущей выражение до нужных нам диапазонов
 // Math.floor() - округляет число с плавающей точкой
 // случайное число от 1 до 100
 let random1 = Math.floor(Math.random() * 100) + 1;
-
+console.log(random1)
 // console.log(v7);
 // console.log(random1);
 
@@ -167,4 +177,4 @@ console.log(r2);
 
 // в node.js нет глобального объекта document
 // он есть только в браузере, будьте острожны используя code runner
-// console.log(document)
+ //console.log(document)
