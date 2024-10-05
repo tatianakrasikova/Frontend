@@ -1,7 +1,7 @@
 const names = ["Мария", "Алексей", "Елена", "Дмитрий"];
 const ages = [22, 31, 45, 53];
 const mixed = [...ages,...names]
-console.log(mixed);
+//console.log(mixed);
 const person1 ={
     name:"Мария",
     age:22
@@ -19,9 +19,9 @@ const person1 ={
                 age:53
         };
 const mixed1=[person1,person2,person3,person4];
-console.log(mixed1);
+//console.log(mixed1);
 const reversedArray1 = mixed1.reverse();
-console.log(reversedArray1);
+//console.log(reversedArray1);
 const names1 = ["Мария", "Алексей", "Елена", "Дмитрий"];
 const ages1 = [22, 31, 45, 53];
 const nameAgeArray = [];
@@ -30,21 +30,21 @@ for (let i = 0; i < names1.length; i++) {
     nameAgeArray.push(names1[i] + " " + ages1[i] + " лет/годов");
 }
 
-console.log(nameAgeArray);
+//console.log(nameAgeArray);
 // Массив с обратной последовательностью
 const reversedArray = nameAgeArray.reverse();
-console.log(reversedArray);
+//console.log(reversedArray);
 // задание 3
 const countries =[];
 const plusValue = countries.unshift("Франция", 
 "Германия", "Италия");
-console.log(countries);
+//console.log(countries);
 const minusValue =countries.pop();
-console.log(countries);
-console.log(minusValue);
+//console.log(countries);
+//console.log(minusValue);
 const minusValue1 = "Италия";
 const plusValue1 = countries.unshift(minusValue1);
-console.log(countries);
+//console.log(countries);
 //задание 4
 const car = {
     brand:"Mercedes", 
@@ -80,13 +80,13 @@ function iterateObject(obj) {
         console.log(`Ключ: ${key}, Значение: ${value}`);
     }
 }
-console.log("Ключи объекта car:");
-console.log(getObjectKeys(car));
-console.log("Значения объекта car:");
-console.log(getObjectValues(car));
-console.log("Информация о машине:");
-console.log(getCarInfo(car));
-console.log("Итерация по ключам и значениям объекта car:");
+// console.log("Ключи объекта car:");
+// console.log(getObjectKeys(car));
+// console.log("Значения объекта car:");
+// console.log(getObjectValues(car));
+// console.log("Информация о машине:");
+// console.log(getCarInfo(car));
+// console.log("Итерация по ключам и значениям объекта car:");
 iterateObject(car);
 
 
