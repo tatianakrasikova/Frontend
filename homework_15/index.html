@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер обратного отсчета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Таймер обратного отсчета</h1>
+        <div class="input-field">
+            <label for="timeInput">Введите время в секундах: </label>
+            <input type="number" id="timeInput" min="1">
+        </div>
+        <button id="startBtn">Старт</button>
+        <div class="timer-display" id="timerDisplay">00:00</div>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

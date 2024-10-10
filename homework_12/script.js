@@ -30,9 +30,25 @@ console.log("возраст героев на 10 лет больше",sum1);
 
 //Задание 1.5
 //Создайте новый массив, где "Anakin Skywalker" заменен на { name: "Darth Vader", isJedi: false, age: 50 }
-const returnValue =  starWarsHeroes.shift();
-const returnValue1 = starWarsHeroes.unshift({ name: "Darth Vader", isJedi: false, age: 50 });
-console.log(starWarsHeroes);
+//const returnValue =  starWarsHeroes.shift();
+//const returnValue1 = starWarsHeroes.unshift({ name: "Darth Vader", isJedi: false, age: 50 });
+//console.log(starWarsHeroes);
+//2 способ
+function changeHero(hero) {
+  // if (hero.name === 'Anakin Skywalker') {
+  //     return { name: "Darth Vader", isJedi: false, age: 50 }
+  // } else {
+  //     return hero
+  // }
+
+  // const res = (hero.name === 'Anakin Skywalker') ? { name: "Darth Vader", isJedi: false, age: 50 } : hero;
+  // return res;
+
+  return (hero.name === 'Anakin Skywalker') ? { name: "Darth Vader", isJedi: false, age: 50 } : hero;
+};
+
+const starWarsHeroesWithDarthVader = starWarsHeroes.map(changeHero);
+console.log(starWarsHeroesWithDarthVader);
 
 
 
