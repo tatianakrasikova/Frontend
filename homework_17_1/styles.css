@@ -1,29 +1,38 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-  
-  .title {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.title {
     font-size: 24px;
     text-align: center;
-  }
-  
-  .todo-list {
+}
+
+.todo-list {
+   
     margin-top: 32px;
     background-color: lightblue;
     border-radius: 4px;
     padding: 8px;
     max-width: 400px;
     margin: 0 auto;
-  }
-  
-  .actions {
+}
+
+.actions {
     display: flex;
     margin-bottom: 8px;
-  }
-  
-  .btn {
+}
+
+.task-input {
+    height: 32px;
+    border-radius: 4px;
+    border: 0;
+    flex: 1;
+}
+
+.btn {
     height: 32px;
     min-width: 94px;
     border: 0;
@@ -33,23 +42,22 @@
     margin-left: 5px;
     background-color: rgb(134, 185, 203);
   }
-  
-  .task-input {
-    height: 32px;
-    border-radius: 4px;
-    border: 0;
-    flex: 1;
-  }
-  
-  .list {
+
+
+.status {
+    margin-bottom: 5px;
+}
+
+.list {
+    padding: 0;
     margin: 0;
     padding: 0;
     list-style-type: none;
     margin: 0 auto 0 0;
     width: 90%;
-  }
-  
-  .list-item {
+}
+
+.list-item {
     display: flex;
     align-items: center;
     height: 40px;
@@ -57,12 +65,9 @@
     background-color: bisque;
     margin: 8px 0;
     padding: 8px;
-  }
-  
-  .list-item_done {
-    text-decoration: line-through;
-    color: #999;
-  }
-  
-  
+}
 
+.list-item_done {
+    text-decoration: line-through;
+    color: gray;
+}

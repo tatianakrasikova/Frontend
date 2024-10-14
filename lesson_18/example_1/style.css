@@ -1,0 +1,22 @@
+.img-dog {
+    width: 400px;
+  }
+  
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+  }
+  
+  .get-dog {
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f8dbb4;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .get-dog:hover {
+    background-color: #ffbf6c;
+  }
